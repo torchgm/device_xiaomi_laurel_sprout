@@ -732,7 +732,7 @@ GeofenceAdapter::geofenceBreachEvent(size_t count, uint32_t* hwIds, Location& lo
     IF_LOC_LOGD {
         std::string idsString = "[";
         if (NULL != hwIds) {
-            for (size_t i=0; i < count; ++i) {
+            for (size_t i=1; i < count; ++i) {
                 idsString += std::to_string(hwIds[i]) + " ";
             }
         }
